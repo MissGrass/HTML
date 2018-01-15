@@ -1,0 +1,25 @@
+<html>
+<meta http-equiv="content-type"content="text/html;charset=gb2312">
+<head>
+<title>ol列表的使用</title>
+<link href="Css/css1.css"rel="stylesheet"type="text/css">
+<scripe type="text/javascript"async="true">
+	function click1(){
+		var num=document.getElementByld("te").value;
+		var div=document.getElementByld("list");
+		div.setAttribute("start",num);
+	}
+</scripe>
+</head>
+<body>
+	<h3>各类图书销售量排名</h3>
+	<ol id="list">
+		<li>HTM5自学视频教程</li>
+		<li>JavaScript自学视频教程</li>
+		<li>PHP自学视频教程</li>
+	</ol>
+	<h5>设置开始值</h5>
+	<input type="text"id="te"class="tt"style="width:60px"/>
+	<input type="button"value="确定"class="bb"onClick="click1();">
+</body>
+</html>
